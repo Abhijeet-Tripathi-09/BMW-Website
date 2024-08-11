@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+nav .logo:hover {
+    transform: rotate(-1800deg);
+    transition: 2s;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, #home {
+    color: rgb(255, 196, 0);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 196, 0);
+    text-align: center;
+}
+
+#B {
+    top: 50%;
+    left: 34.5%;
+}
+#M {
+    top: 50%;
+    left: 43%;
+}
+#W {
+    top: 50%;
+    left: 53%;
+}
+.content h1 {
+    font-size: 160px;
+    font-weight: 600;
+    transition: .3s;
+    position: absolute;
+}
+
+.content:hover {
+    -webkit-text-stroke: 2px rgb(255, 238, 0);
+    color: transparent;
+}
+
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid rgb(0, 140, 255);
+    padding: 14px 17px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.content a:hover{
+    color: rgb(0, 140, 255);
+}
+
+.backVideo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .backVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .backVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background: #333;
+    display: flex;
+}
+
+.main img{
+    position: absolute;
+    width: 703px;
+    right: 750px;
+    top: 991px;
+}
+
+.main h1 {
+    position: absolute;
+    color: #fff;
+}
+
+#b {
+    font-size: 150px;
+    top: 114%;
+    left: 49%;
+}
+
+#m {
+    font-size: 150px;
+    top: 138%;
+    left: 50%;
+}
+
+#w {
+    font-size: 150px;
+    top: 162.5%;
+    left: 51%;
+}
+
+.social_media {
+    top: 650px;
+    left: 15%;
+    position: absolute;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social_media i {
+    font-size: 15px;
+    color: rgb(0, 153, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.social_media i:hover{
+    color: rgb(0, 0, 0);
+    background:rgb(0, 153, 255);
+}
+
+.models {
+    background-image: url(/BMW-Website/BackgroundImages.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.models #car-1{
+    top: 220%;
+    left: -2%;
+    position: absolute;
+    width: 50%;
+    transition: 1s;
+}
+.models #bmw-logo {
+    width: 20%;
+    position: absolute;
+    right: 3%;
+    top: 200.5%;
+}
+
+.information {
+    height: 400px;
+    width: 600px;
+    padding: 40px 20px 20px;
+    margin: 30px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-size: 50px;
+    color: red;
+    top: 50%;
+    left: 50%;
+    box-shadow: rgb(0, 204, 255) 5px 5px, rgb(50, 207, 255) 10px 10px, rgb(0, 0, 0) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgb(255, 0, 0) 25px 25px;
+}
+
+.information div {
+    height: 50px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    border-left: 1px solid transparent;
+}
+.information div:hover {
+    padding-left: 2px;
+    border-left: 1px solid rgb(255, 128, 128);
+    border-radius: 10px;
+}
+.information div p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.information div pre {
+    font-size: 25px;
+    color: rgb(0, 153, 255);
+    margin-left: 50px;
+}
+
+.chose-one-car{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 60px;
+}
+.chose-one-car img {
+    height: 80px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.chose-one-car img:hover {
+    height: 100px;
+}
+
+.find-your-car {
+    height: 50vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.find-your-car pre {
+    font-size: 38px;
+    margin-top: 25px;
+}
+.find-your-car #first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.find-your-car #first {
+    height: 300px;
+}
+.find-your-car #first div {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.find-your-car #first div img {
+    height: 150px;
+}
+.find-your-car #first div p {
+    font-size: 25px;
+    font-weight: 100;
+}
+.find-your-car #first div button {
+    font-size: 16px;
+    padding: 13px;
+    background-color: transparent;
+    border: 1.5px solid rgb(136, 136, 136);
+    border-radius: 3px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.find-your-car #first div button:hover {
+    border: 1.5px solid black;
+}
+
+.five {
+    height: 474px;
+    width: 100%;
+    background-image: url("https://bmw.scene7.com/is/image/BMW/DI21_000048047:3to1?fmt=webp&wid=1504&hei=501");
+    background-position: center;
+    background-size: cover;
+    padding: 180px 100px;
+}
+.five p{
+    font-size: 35px;
+    color: #fff;
+}
+.five button {
+    font-size: 17px;
+    padding: 15px 100px;
+    background-color: transparent;
+    border: 2px solid rgb(175, 175, 175);
+    border-radius: 3px;
+    margin-top: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+.five button:hover {
+    border: 2px solid #ffffff;
+}
+
+.six {
+    height: 100vh;
+    width: 100%;
+}
+.six .six-content {
+    height: 100%;
+    width: 100%;
+    padding: 20px 40px;
+}
+.six .six-content .first {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.six .six-content .first img {
+    height: 350px;
+}
+.six .six-content .first .first-content {
+    height: 250px;
+    width: 590px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.six .six-content .first .first-content div {
+    font-size: 13px;
+}
+.six .six-content .first .first-content pre {
+    font-size: 35px;
+}
+.six .six-content .first .first-content p {
+    font-size: 18px;
+    line-height: 25px;
+}
+.six .six-content .first .first-content button {
+    width: 200px;
+    font-size: 17px;
+    padding: 12px 45px;
+    background-color: transparent;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s;
+}
+.six .six-content .first .first-content button:hover {
+    border-color: #333;
+}
+
+.all-models {
+    width: 100%;
+    display: flex;
+    padding: 30px 100px;
+    gap: 5vh;
+}
+.all-models div {
+    font-size: 15px;
+}
+.all-models a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.all-models a:hover {
+    color: rgba(0, 110, 255, 0.651);
+}
+
+.footer {
+    height: 428px;
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 90px 110px;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer-first {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-first div {
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer-first div p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .footer-first div a {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.footer .footer-first div a:hover {
+    color: black;
+}
+.footer .social-media {
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer .social-media i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 110px;
+}
+.copyright p {
+    font-size: 20px;
+}
+.copyright div {
+    width: 30%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright div a {
+    text-decoration: none;
+    color: black;
+}
+.copyright div a:hover {
+    color: rgb(0, 140, 255);
+}
